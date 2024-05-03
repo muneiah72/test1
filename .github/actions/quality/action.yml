@@ -13,7 +13,7 @@ inputs:
   pat:
     description: "Enter Personal Access Token"
     required: true
-    default: ""
+    default: ${{ secrets.GITHUB_TOKEN }}
 runs:
   using: 'node20'
   main: '../../../dist/index.js'
