@@ -26,4 +26,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Quality Changes Step
-        uses: ../../actions/quality # ./.github/actions/quality muneiah72/test1@v1
+        uses: ./.github/actions/quality@main # ./.github/actions/quality muneiah72/test1@v1
