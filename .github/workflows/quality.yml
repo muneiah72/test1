@@ -1,18 +1,25 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Quality Deployment
 
 # Controls when the workflow will run
-#on: workflow_dispatch
-  # Allows you to run this workflow manually from the Actions tab
-  # workflow_dispatch:
+# Allows you to run this workflow manually from the Actions tab
+
 on:
   workflow_dispatch:
     inputs:
       title:
-        description: 'Log level'
+        description: "Enter SAP Release Version"
         required: true
-        default: 'warning'
+        default: "SAP Release - x Quality Branch"
+      reviewer:
+        description: "Enter Reviewer username"
+        required: true
+        default: ""
+      pat:
+        description: "Enter Personal Access Token"
+        required: true
+        default: ""
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -22,11 +29,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v4
-      # To use this repository's private action,
-      # you must check out the repository
+      # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v4
       - name: Quality Changes Step
-        uses: ./.github/actions/quality/ # ./.github/actions/quality muneiah72/test1@v1
+        uses: ./.github/actions/quality/
