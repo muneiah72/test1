@@ -12,7 +12,14 @@ on:
         description: "Enter SAP Release Version"
         required: true
         default: "SAP Release - x Quality Branch"
-      
+      reviewer:
+        description: "Enter Reviewer username"
+        required: true
+        default: ""
+      pat:
+        description: "Enter Personal Access Token"
+        required: true
+        default: ""
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
