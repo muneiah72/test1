@@ -26,4 +26,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Hello world action step
-        uses: ./ #muneiah72/test1@v1
+        uses: ./.github/actions/quality #muneiah72/test1@v1
