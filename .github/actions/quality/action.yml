@@ -5,7 +5,7 @@ inputs:
   title:
     description: "Enter SAP Release Version"
     required: true
-    default: 
+    default: "SAP Release - x Quality Branch"
   reviewer:
     description: "Enter Reviewer Username"
     required: true
@@ -13,7 +13,7 @@ inputs:
   pat:
     description: "Enter Personal Access Token"
     required: true
-    default: test
+    default: ***
 runs:
   using: 'node20'
   main: '../../../dist/index.js'
