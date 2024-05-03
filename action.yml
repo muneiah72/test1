@@ -9,7 +9,7 @@ inputs:
   reviewer:
     description: "Enter Reviewer username"
     required: true
-    default: "muneiah-gade_hmgroup"
+    default: "muneiah-gade"
   pat:
     description: "Enter Personal Access Token"
     required: true

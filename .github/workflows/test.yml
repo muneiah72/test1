@@ -6,23 +6,6 @@ name: CI
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# inputs:
-#   title:
-#     description: "Enter SAP Release Version"
-#     required: true
-#     default: "SAP Release - x Quality Branch"
-#   reviewer:
-#     description: "Enter Reviewer username"
-#     required: true
-#     default: "muneiah72"
-#   pat:
-#     description: "Enter Personal Access Token"
-#     required: true
-#     default: ""
-# runs:
-#   using: 'node20'
-#   main: 'quality.js'
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -43,10 +26,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Hello world action step
-        uses: ./ #muneiah72/test1@v1
-
-#       # Runs a set of commands using the runners shell
-#       - name: Run a multi-line script
-#         run: |
-#           echo Add other actions to build,
-#           echo test, and deploy your project.
+        uses: muneiah72/test1@v1
