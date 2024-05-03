@@ -3,9 +3,9 @@
 name: CI
 
 # Controls when the workflow will run
-on:
+on: workflow_dispatch
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  # workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -25,5 +25,5 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Hello world action step
-        uses: ./.github/actions/quality #muneiah72/test1@v1
+      - name: Quality Changes Step
+        uses: ../../actions/quality # ./.github/actions/quality muneiah72/test1@v1
