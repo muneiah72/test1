@@ -31082,9 +31082,9 @@ const core = __nccwpck_require__(3736);
 const github = __nccwpck_require__(6070);
 
 try {
-  // `who-to-greet` input defined in action metadata file
-  const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
+  // `title` input defined in action metadata file
+  const title = core.getInput('title');
+  console.log(`Hello ${title}!`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
