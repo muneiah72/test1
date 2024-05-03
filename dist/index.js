@@ -31083,7 +31083,7 @@ const github = __nccwpck_require__(6070);
 
 try {
   // `title` input defined in action metadata file
-  const title = core.getInput('title');
+  const title = core.getInput('title', {required: true});
   console.log(`Hello ${title}!`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
