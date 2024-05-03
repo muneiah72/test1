@@ -5,15 +5,15 @@ inputs:
   title:
     description: "Enter SAP Release Version"
     required: true
-    default: ${{inputs.title}} #"SAP Release - x Quality Branch"
+    # default: "SAP Release - x Quality Branch"
   reviewer:
     description: "Enter Reviewer Username"
     required: true
-    default: "muneiah-gade"
+    # default: "muneiah-gade"
   pat:
     description: "Enter Personal Access Token"
     required: true
-    default: 8876
+    # default: 8876
 runs:
   using: 'node20'
   main: '../../../dist/index.js'
