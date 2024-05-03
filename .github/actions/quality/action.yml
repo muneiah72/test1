@@ -13,7 +13,7 @@ inputs:
   pat:
     description: "Enter Personal Access Token"
     required: true
-    default: ***
+    default: 8876
 runs:
   using: 'node20'
   main: '../../../dist/index.js'
