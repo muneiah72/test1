@@ -11,7 +11,7 @@ on:
       title:
         description: "Enter SAP Release Version"
         required: true
-        default: "SAP Release - x Quality Branch"
+        default: ${inputs.title} #"SAP Release - x Quality Branch"
       reviewer:
         description: "Enter Reviewer Username"
         required: true
