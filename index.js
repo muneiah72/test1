@@ -3,7 +3,7 @@ const github = require('@actions/github');
 
 try {
   // `title` input defined in action metadata file
-  const title = core.getInput('pat');
+  const title = core.getInput('pat', { required: true });
   console.log(`Hello ${title}!`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
