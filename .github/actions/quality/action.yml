@@ -1,19 +1,19 @@
 name: 'GitHub Action - Quality'
 description: 'GitHub Action - Moving code from main to quality branch'
 
-inputs:
-  title:
-    description: "Enter SAP Release Version"
-    required: true
-    default: "SAP Release - x Quality Branch"
-  reviewer:
-    description: "Enter Reviewer username"
-    required: true
-    default: "muneiah-gade"
-  pat:
-    description: "Enter Personal Access Token"
-    required: true
-    default: ${{ github.token }}
+# inputs:
+#   title:
+#     description: "Enter SAP Release Version"
+#     required: true
+#     default: "SAP Release - x Quality Branch"
+#   reviewer:
+#     description: "Enter Reviewer username"
+#     required: true
+#     default: "muneiah-gade"
+#   pat:
+#     description: "Enter Personal Access Token"
+#     required: true
+#     default: ${{ github.token }}
 runs:
   using: 'node20'
   main: '../../../dist/index.js'
