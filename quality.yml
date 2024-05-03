@@ -1,11 +1,6 @@
 name: 'GitHub Action - Quality'
 description: 'GitHub Action - Moving code from main to quality branch'
 
-# Controls when the workflow will run
-on:
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 inputs:
   title:
     description: "Enter SAP Release Version"
@@ -18,7 +13,7 @@ inputs:
   pat:
     description: "Enter Personal Access Token"
     required: true
-    default: ""
+    default: ${{ github.token }}
 runs:
   using: 'node20'
-  main: 'quality.js'
+  main: 'index.js'
