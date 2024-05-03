@@ -7,7 +7,7 @@ inputs:
     required: true
     default: "SAP Release - x Quality Branch"
   reviewer:
-    description: "Enter Reviewer username"
+    description: "Enter Reviewer Username"
     required: true
     default: "muneiah-gade"
   pat:
