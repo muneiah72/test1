@@ -5,7 +5,7 @@ inputs:
   title:
     description: "Enter SAP Release Version"
     required: true
-    # default: ${{ inputs.title }}
+    default: 
   reviewer:
     description: "Enter Reviewer Username"
     required: true
