@@ -34,3 +34,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Quality Changes Step
         uses: ./.github/actions/quality/
+        with:
+          title: ${{ inputs.title }}
+          reviewer: ${{ inputs.reviewer }}
+          pat: ${{ inputs.pat }}
